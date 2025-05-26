@@ -296,6 +296,9 @@ background-color: white;
 #telefone table {
   border-collapse: collapse;
   width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  
 }
 
