@@ -1,0 +1,317 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: darkslategrey;
+    overflow-x: hidden;
+    font-family: "Luckiest Guy", cursive;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    color: inherit; 
+  text-decoration: none; 
+}
+
+#titulo {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+#titulo section {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-top: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+   
+    
+    
+}
+
+
+
+#titulo img {
+    width: 200px;
+    height: auto;
+    margin: 0;     
+    padding: 0;
+    align-self: center;
+    margin-left: 30px;
+    
+}
+
+#imagem {
+    width: 100%;
+    height: 100vh;
+    background-image: url('imagens/inicio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0; 
+    backdrop-filter: 20px;
+    
+}
+
+
+#imagem h1 {
+    font-size: 5vw;
+    margin: 0;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+   
+}
+
+#imagem:hover h1{
+    transform:scale(1.3);
+    
+}
+
+#imagem p {
+    font-size: 4vw;
+    margin-top: 40px;
+}
+
+#imagem2 {
+    background-image: url('imagens/segunda.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    height: 400px;
+    margin-left: 40px;
+    margin-top: 80px;
+     
+}
+
+#texto {
+    text-align: center;
+    scroll-margin-top: 80px; 
+    max-width: 600px;
+    justify-content: left;
+    margin-left: 700px;
+}
+
+#texto h1 {
+    margin-top: -400px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#texto p {
+    margin-top: 0;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    text-align: justify;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+#proposta h1 {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------ RESPONSIVIDADE ------------------ */
+@media screen and (max-width: 768px) {
+    #imagem h1,
+    #imagem p {
+        font-size: 6vw;
+    }
+
+    #imagem2 {
+        height: 250px;
+    }
+
+    #texto h1 {
+        font-size: 1.5em;
+    }
+
+    #texto p {
+        font-size: 1em;
+        margin-right: 0;
+    }
+}
+
+#galeria {
+    display: flex;
+    justify-content: center;   
+    gap: 100px;                 
+    padding: 40px 20px;
+    flex-wrap: wrap;  
+    text-align: center;
+    align-items: center;         
+}
+
+#proposta {
+    
+    scroll-margin-top: 80px;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+#proposta img {
+    transition: transform 0.3s ease;
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    align-items: center;
+    
+}
+
+#proposta:hover img{
+    transform:scale(1.3);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.267);
+}
+
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(255, 255, 255); 
+  margin: 20px 20px; 
+}
+
+#finalidade{
+scroll-margin-top: 80px;
+justify-content: center;
+align-items: center;
+text-align: center;
+display: block;
+color: white;
+}
+
+#finalidade img{
+width: 700px;
+height: auto;
+border-radius: 20px;
+}
+
+#equipe{
+margin-top: 30px;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+color: rgb(0, 0, 0); 
+background-color: white;
+}
+
+#equipe h1{
+    padding-top: 100px;
+    margin-top: 90px;
+}
+
+#equipe img{
+    width: 100px;
+    height: auto;
+}
+
+#equipe table {
+    
+  margin: 50px auto; 
+  border-collapse: separate;
+  text-align: center; 
+}
+
+#equipe th,
+#equipe td {
+  border: solid 3px darkslategrey;
+  padding: 30px;
+  text-align: center;
+}
+#telefone{
+    scroll-margin-top: 80px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#telefone img{
+    width: 700px;
+    height: auto;
+    border-radius: 20px;
+    text-align: left;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.tabela {
+    
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: -250px;         
+  padding-right: 100px;        
+ }
+
+#telefone table {
+  border-collapse: collapse;
+  width: auto;
+ 
+}
+
+#telefone th,
+#telefone td {
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  text-align: left;
+}
+#final {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#final hr{
+    margin-top: 200px;
+}
+
+#final img{
+    border-radius: 20px;
+    width: 300px;
+}
+
+
+
+
+
